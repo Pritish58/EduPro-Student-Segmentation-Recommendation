@@ -1,0 +1,19 @@
+EDUPRO - QUICK START
+
+1. Extract this project folder.
+2. Keep the supplied workbook in Data/raw/EduPro_Online_Platform.xlsx.
+3. On Windows, double-click run_edupro.bat.
+4. The first launch creates .venv, installs requirements and opens the Streamlit dashboard.
+5. To work through the data science process, open the Notebooks folder and run notebooks 01, 02 and 03 in order.
+
+The processed CSV files are already generated in Data/Processed.
+The trained clustering model and scaler are already saved in Models.
+The original workbook is not modified.
+
+If you need to install manually, open a terminal in this folder and run:
+  py -m venv .venv
+  .venv\Scripts\activate
+  py -m pip install -r requirements.txt
+  streamlit run app.py
+
+If the workbook is replaced, rerun Notebook 01 and Notebook 02, or restart the dashboard to rebuild the processed files and model artifacts.
